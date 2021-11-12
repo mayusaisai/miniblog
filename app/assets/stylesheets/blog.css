@@ -1,0 +1,98 @@
+body,
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #7fd92d;
+}
+.header_title {
+    font-size: 26px;
+    color: white;
+    line-height: 60px;
+}
+
+.nav_list {
+    display: flex;
+    margin-top: 22px;
+    
+}
+.nav_list li {
+    margin-right: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+/* トップページ==========*/
+.contents {
+    height: 100vh;
+}
+.content {
+    /*background-color: pink;*/
+    padding: 18px;
+    margin: 60px 15% 15px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px #ddd;
+}
+
+
+.blogbtns {
+    display: flex;
+}
+.blog_btn {
+    height:20px;
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px 20px;
+    background-color: #7fd92d;
+    /*border: 1px solid #ddd;*/
+    box-shadow: 3px 3px #ddd;
+}
+
+/*投稿画面=======*/
+.post_content {
+    /*background-color: pink;*/
+    height: 200px;
+    padding: 18px;
+    margin: 60px 10% 15px;
+}
+.post_box {
+    /*background-color: yellow;*/
+    border-bottom: 2px solid #7fd92d;
+    
+}
+.blog_post {
+    border: none;
+    resize: vertical;
+    height: 100px;
+    width: 100%;
+}
+.post_content p {
+    margin: 0;
+    font-size: 12px;
+    color: #ddd;
+}
+
+.post_btn {
+    height:35px;
+    color: white;
+    font-size: 14px;
+    padding: 5px 25px;
+    background-color: #7fd92d;
+    border: none;
+    box-shadow: 3px 3px #ddd;
+    margin : 30px 20px; 
+}

@@ -1,0 +1,13 @@
+<div class="contents">
+    
+        <div class="post_content">
+            <p>本文</p>
+            <%= form_with(model: @blog, local: true) do |form| %>
+                <div class="post_box">
+                <%= form.text_area :text, rows: "4",class: "blog_post" %>
+                </div>
+                <%= form.submit "送信", class: "post_btn" %>
+            <% end %>
+        </div>
+　
+</div>

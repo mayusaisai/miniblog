@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ミニブログ</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <header class="header">
+      <div class="header_title"><a href="/">Blog</a></div>
+      <div class="header_nav">
+        <ul class="nav_list">
+          <%= link_to "SignIn", new_user_session_path %>
+          <%= link_to "SignOut", destroy_user_session_path, method: "delete" %>
+          <li><a href="/blogs/new">New</a></li>
+            <!--<strong><P>投稿には新規登録/ログインが必要です</P></strong>-->
+        </ul>
+      </div>
+    </header>
+    
+    
+    
+    <%= yield %>
+  </body>
+</html>
